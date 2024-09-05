@@ -253,8 +253,6 @@ ul li span:hover{
         background: linear-gradient(160deg, #153677, #4e085f);
     }
     .todo-app{
-        /* width: 100%;
-        max-width: 900px; */
         font-size: 40px;
         width: max-content;
         background: #fff;
