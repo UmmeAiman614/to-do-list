@@ -5,11 +5,15 @@
     box-sizing: border-box;
     max-width: 100%;
 }
-
+body{
+    background: linear-gradient(260deg, #153677, #4e085f);
+    background-position: center;
+    background-size: cover;
+}
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    /* background: linear-gradient(135deg, #153677, #4e085f); */
     padding: 10px;
 }
 .todo-app{
@@ -113,10 +117,34 @@ ul li span:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:800px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 50%;
+        background: linear-gradient(160deg, #153677, #4e085f);
+    }
     .todo-app{
-        width: 100%;
-        max-width: 600px;
+        /* width: 100%;
+        max-width: 600px; */
+        font-size: 30px;
+        width: max-content;
         background: #fff;
         margin: 10px auto 20px;
         padding: 40px 30px 70px;
@@ -128,7 +156,7 @@ ul li span:hover{
         justify-content: space-between;
         background: #edeef0;
         border-radius: 30px;
-        margin-left: -20px;
+        margin-left: -10px;
         margin-bottom: 25px;
     }
     input{
@@ -136,8 +164,10 @@ ul li span:hover{
         border: none;
         outline: none;
         background: transparent;
+        font-size: 20px;
         padding: 8px;
         padding-left: 30px;
+        font-size: 20px;
         font-weight: 14px;
     }
     button{
@@ -146,17 +176,41 @@ ul li span:hover{
         padding: 16px 50px;
         background: #ff5945;
         color: #fff;
-        font-size: 16px;
+        font-size: 20px;
         cursor: pointer;
         border-radius: 40px;
+    }
+    ul li{
+        list-style-type: none;
+        font-size: 30px;
+        padding: 12px 8px 12px 50px;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+    }
+    ul li::before{
+        height: 30px;
+        width: 30px;
+        top: 15px;
+        left: 5px;
+    }
+    ul li span{
+        font-size: 30px;
     }
 }
 
 
 @media(max-width:360px){
+    body{
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(160deg, #153677, #4e085f);
+    }
     .todo-app{
-        width: 100%;
-        max-width: 600px;
+        /* width: 100%;
+        max-width: 700px; */
+        font-size: 40px;
+        width: max-content;
         background: #fff;
         margin: 10px auto 20px;
         padding: 40px 30px 70px;
@@ -178,6 +232,7 @@ ul li span:hover{
         background: transparent;
         padding: 8px;
         padding-left: 30px;
+        font-size: 25px;
         font-weight: 14px;
     }
     button{
@@ -186,18 +241,69 @@ ul li span:hover{
         padding: 16px 50px;
         background: #ff5945;
         color: #fff;
-        font-size: 16px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
+}
+@media(max-width:300px){
+    body{
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(160deg, #153677, #4e085f);
+    }
+    .todo-app{
+        /* width: 100%;
+        max-width: 900px; */
+        font-size: 40px;
+        width: max-content;
+        background: #fff;
+        margin: 10px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #edeef0;
+        border-radius: 30px;
+        margin-left: -3px;
+        margin-bottom: 25px;
+    }
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 8px;
+        padding-left: 30px;
+        font-size: 30px;
+        font-weight: 14px;
+    }
+    button{
+        border: none;
+        outline: none;
+        padding: 16px 50px;
+        background: #ff5945;
+        color: #fff;
+        font-size: 20px;
         cursor: pointer;
         border-radius: 40px;
     }
 }
 @media(max-width:260px){
+    body{
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(160deg, #153677, #4e085f);
+    }
     .todo-app{
-        width: 100%;
-        max-width: 800px;
+        font-size: 50px;
+        width: max-content;
         background: #fff;
-        margin: 10px auto 20px;
-        padding: 40px 30px 70px;
+        margin: 5px auto 10px;
+        padding: 10px 30px 10px;
         border-radius: 10px;
     }
     .row{
@@ -216,6 +322,7 @@ ul li span:hover{
         background: transparent;
         padding: 8px;
         padding-left: 30px;
+        font-size: 40px;
         font-weight: 14px;
     }
     button{
